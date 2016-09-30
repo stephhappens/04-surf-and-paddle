@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200px;
 }
@@ -26,7 +26,7 @@ img {
   max-width: 100%;
 }
 
-.hero__container, .section__container {
+.hero__container, .section__container  {
   width: 100%;
   max-width: 65rem;
   margin: auto;
@@ -38,7 +38,7 @@ img {
   min-height: 100vh;
   padding: 0 1rem;
   background: url("https://hd.unsplash.com/photo-1455142449617-67932276fd30") no-repeat center center;
-  color: #ecf0f1
+  color: #ecf0f1;
 }
 
 .hero__fill {
@@ -87,12 +87,45 @@ ul.nav-group {
 
 .btn {
   display: inline-block;
+  background: grey;
   border: currentColor 1px solid;
   line-height: 1em;
-  border-radius: 2em;
   padding: 0.5em;
   color: inherit;
   text-decoration: none
+}
+
+.btn_comments {
+  display: inline-block;
+  background: grey;
+  border: currentColor 1px solid;
+  line-height: 1em;
+  padding: 0.5em;
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
+}
+
+.btn_read {
+  display: inline-block;
+  background: grey;
+  border: currentColor 1px solid;
+  line-height: 1em;
+  padding: 0.5em;
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
+}
+
+.btn_share {
+  display: inline-block;
+  background: #0c145e;
+  border: currentColor 1px solid;
+  line-height: 1em;
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
 }
 
 .hero .btn {
@@ -101,6 +134,38 @@ ul.nav-group {
 
 .blog_post {
   text-align: left;
+  float: left;
+  width: 50%;
+  padding-left: 2em;
+}
+
+.sidebar {
+  overflow: auto;
+  display: inline-block;
+  float: right;
+  width: 50%;
+  padding-right: 2em;
+}
+
+.sidebar_author {
+  float: right;
+  text-align: center;
+  padding-right: 7em;
+  padding-top: 1em;
+}
+
+.post__author-photo {
+  border-radius: 50%;
+}
+
+.advertisement {
+  border: 1em solid green;
+}
+
+.ad_photo {
+  border-radius: 50%;
+  border: 1em solid cyan;
+
 }
 
 .section {
@@ -108,6 +173,10 @@ ul.nav-group {
   padding: 2rem 1rem;
   color: #333;
   text-align: left;
+}
+
+.sidebar_social--ad {
+  text-align: center;
 }
 
 .section--info {
@@ -128,9 +197,22 @@ ul.nav-group {
 }
 
 .section__header {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #0c145e;
+
+}
+
+.section__header__blog {
   text-align: left;
   font-size: 1.6rem;
   color: #0c145e;
+}
+.section_header__sidebar {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #0c145e;
+  border: 1em solid pink;
 }
 
 .divider {
@@ -176,43 +258,16 @@ ul.nav-group {
 }
 
 .polaroid {
-  height: 100%;
   position: relative;
-  margin: 0;
-  filter: contrast(.9) sepia(.2);
-  -webkit-filter: contrast(.9) sepia(.2);
-}
-
-.polaroid::before {
-  content: "";
-  display: block;
-  padding-top: calc(100% * 9 / 16);
-}
-
-.polaroid img {
-  position: absolute;
   top: 0;
-  width: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: 15em;
+  height: 15em;
+  display: inline-block;
+  margin:
 }
 
 .section--more {
   background: linear-gradient(#fdcc52,#fdc539);
-}
-
-.polaroid::after {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: -webkit-radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);
-  background: radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);
-  mix-blend-mode: overlay;
 }
 
 .student-fact, .card {
@@ -234,5 +289,3 @@ ul.nav-group {
   text-align:center;
   margin-bottom: 1rem;
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
