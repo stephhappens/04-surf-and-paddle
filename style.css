@@ -92,6 +92,11 @@ ul.nav-group {
   opacity: 1;
 }
 
+.fa-life-ring {
+  color: white;
+  padding-right: .5em;
+}
+
 .btn_comments {
   display: inline-block;
   background: #a2a2a2;
@@ -154,23 +159,30 @@ ul.nav-group {
 .main {
   max-width: 65rem;
   display: flex;
+  margin: auto;
 }
 
 .sidebar {
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%auto;
 }
 
 .sidebar_author {
-  float: right;
-  text-align: center;
-  padding-right: 7em;
-  padding-top: 1em;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    /* padding-right: 7em; */
+    /* padding-top: 1em; */
 }
 
-.socialmedia ul {
-  display: flex;
-  justify-content:space-around;
-  position: relative;
+.socialmedia {
+    display: flex;
+    padding: 0;
+    width: 44%;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .socialmedia_item a {
@@ -323,15 +335,18 @@ footer {
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
+  padding-right: 9rem;
 }
 
-.nav-bottom_group {
+.nav-bottom_group, .nav-bottom_group ul{
   display: flex;
   margin: 0 -0.5rem;
   padding-right: 0.8rem;
   align-items: baseline;
   color: white;
+  width: 100%;
 }
+
 
 .nav-bottom {
   display: flex;
