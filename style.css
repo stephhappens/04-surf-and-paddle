@@ -37,7 +37,7 @@ h2, h3, h4 {
   font-weight: 300;
 }
 
-.hero__container, .section__container  {
+.hero__container, {
   width: 100%;
   max-width: 65rem;
   margin: auto;
@@ -51,7 +51,7 @@ h2, h3, h4 {
   height: 20vh;
   min-height: 50vh;
   position: relative;
-  overflow:auto;
+  overflow: auto;
   color: white;
 }
 
@@ -96,30 +96,47 @@ ul.nav-group {
   display: inline-block;
   background: #a2a2a2;
   line-height: 1em;
-  padding: 0.5em;
-  color: inherit;
-  text-decoration: none;
   color: white;
+  align-items: center;
+  padding-right: .5em;
+}
+
+.fa-comment {
+  color: white;
+  background-color:#424242;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
 }
 
 .btn_read {
   display: inline-block;
   background: #a2a2a2;
   line-height: 1em;
-  padding: 0.5em;
-  color: inherit;
-  text-decoration: none;
   color: white;
+  align-items: center;
+  padding-right: .5em;
+}
+
+.fa-bookmark {
+  color: white;
+  background-color:#424242;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
 }
 
 .btn_share {
   display: inline-block;
   background: #03389e;
   line-height: 1em;
-  padding: .5em;
-  color: inherit;
-  text-decoration: none;
+  padding-right: .5em;
   color: white;
+}
+
+.fa-share {
+  color: white;
+  background-color:#032394;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
 }
 
 .left_side {
@@ -132,13 +149,13 @@ ul.nav-group {
 .right_side {
   width: 50%;
   margin: 1rem;
-
 }
 
 .main {
- max-width: 65rem;
- display: flex;
+  max-width: 65rem;
+  display: flex;
 }
+
 .sidebar {
   overflow: auto;
 }
@@ -148,6 +165,18 @@ ul.nav-group {
   text-align: center;
   padding-right: 7em;
   padding-top: 1em;
+}
+
+.socialmedia ul {
+  display: flex;
+  justify-content:space-around;
+  position: relative;
+}
+
+.socialmedia_item a {
+  font-size: 1rem;
+  color: #bdbdbd;
+  text-decoration: none;
 }
 
 .post__author-photo {
@@ -160,13 +189,17 @@ ul.nav-group {
   text-align: center;
 }
 
+.adlink {
+  font-size: 0.8rem;
+}
+
 .ad_photo {
-    width: 20vh;
-    position: relative;
+  width: 20vh;
+  position: relative;
+  text-align: center;
 }
 
 .section {
-  background: #fafafa;
   padding: 2rem 1rem;
   color: #333;
   text-align: left;
@@ -183,14 +216,14 @@ ul.nav-group {
 
 .fancy-text--medium {
   font-size: 1.6rem;
-  display: inline-block;;
+  display: inline-block;
+  ;
 }
 
 .section__header {
   text-align: center;
   font-size: 1.6rem;
   color: #0c145e;
-
 }
 
 .section__header__blog {
@@ -198,6 +231,25 @@ ul.nav-group {
   font-size: 1.6rem;
   color: #0c145e;
 }
+
+.post__author-photo_mini {
+  border-radius: 50%;
+  height: 1.5em;
+  vertical-align: middle;
+  padding-right:.5em;
+}
+
+.quote {
+  color: #517ee3;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 1px solid #bdbdbd;
+  padding: 0.75rem 0.5rem;
+  margin: 0 0.3rem;
+}
+
 .section_header__sidebar {
   text-align: center;
   font-size: 1.6rem;
@@ -207,7 +259,7 @@ ul.nav-group {
 .polaroid {
   position: absolute;
   top: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -228,19 +280,63 @@ ul.nav-group {
 }
 
 .moarblogposts {
-   display: flex;
-   flex-direction: row;
-   width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.post_title {
+  display: flex;
+  justify-content: flex-start;
+  color: #e0e0e0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 74%;
+  padding-left: 0.5rem;
 }
 
 footer {
   background: #000746;
-  color: white;
+  text-decoration-color: white;
   display: flex;
 }
 
 .ironyardlogo {
   padding: .5em;
   width: 8%;
-  display:flex;
+  display: flex;
+}
+
+.nav-bottom__item a {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  text-align: right;
+}
+
+.legal {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-bottom_group {
+  display: flex;
+  margin: 0 -0.5rem;
+  padding-right: 0.8rem;
+  align-items: baseline;
+  color: white;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: white;
 }
