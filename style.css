@@ -18,16 +18,15 @@ ul {
   display: inline-block;
 }
 
-h1 {
+.heading {
   margin: 0;
-  font-weight: 300;
-  font-size: 5rem;
-  text-align: center;
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 0;
 }
 
-h4 {
+.hero_subtitle {
   margin: 0;
-  font-weight: 300;
   font-size: 1rem;
   text-align: center;
   color: #303030;
@@ -37,7 +36,7 @@ h2, h3, h4 {
   font-weight: 300;
 }
 
-.hero__container, {
+.hero__container {
   width: 100%;
   max-width: 65rem;
   margin: auto;
@@ -47,12 +46,13 @@ h2, h3, h4 {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
-  background: url("https://hd.unsplash.com/photo-1455142449617-67932276fd30") no-repeat center center;
+  background: url("https://hd.unsplash.com/photo-1417689283303-02397b2eefe9") no-repeat center center;
   height: 20vh;
   min-height: 50vh;
   position: relative;
   overflow: auto;
   color: white;
+  text-shadow: #303030;
 }
 
 .hero h2 {
@@ -145,15 +145,14 @@ ul.nav-group {
 }
 
 .left_side {
-  text-align: left;
   width: 50%;
-  padding-left: 2em;
-  margin: 1rem;
+  padding-right: 5rem;
 }
 
 .right_side {
   width: 50%;
   margin: 1rem;
+  padding-left: 5rem;
 }
 
 .main {
@@ -199,6 +198,7 @@ ul.nav-group {
 
 .advertisement {
   text-align: center;
+  padding: 3rem;
 }
 
 .adlink {
