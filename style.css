@@ -1,3 +1,355 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
-  background: yellow;
+  margin: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200px;
+}
+
+ul {
+  text-align: right;
+  list-style-type: none;
+  padding: 0;
+}
+
+.heading {
+  margin: 0;
+    font-size: 7.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.hero_subtitle {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  color: #303030;
+}
+
+h2, h3, h4 {
+  font-weight: 300;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: url("https://hd.unsplash.com/photo-1456207242739-ff52c0c7413c");
+  height: 30rem;
+  color: white;
+  text-shadow: #303030;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+
+.top-nav {
+  display: block;
+  overflow: auto;
+  font-size: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  list-style-type: none;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-group {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.nav-group a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-group__item {
+  margin: 0 0.5rem;
+  /*opacity: 0.6;*/
+  display: inline;
+}
+
+.nav-group__item:hover {
+  /*opacity: 1;*/
+}
+
+.fa-life-ring {
+  color: white;
+  padding-right: .5em;
+}
+
+.btn_comments {
+  display: inline-block;
+  background: #a2a2a2;
+  line-height: 1em;
+  color: white;
+  align-items: center;
+  padding-right: .5em;
+}
+
+.fa-comment {
+  color: white;
+  background-color:#424242;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+}
+
+.btn_read {
+  display: inline-block;
+  background: #a2a2a2;
+  line-height: 1em;
+  color: white;
+  align-items: center;
+  padding-right: .5em;
+}
+
+.fa-bookmark {
+  color: white;
+  background-color:#424242;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+}
+
+.btn_share {
+  display: inline-block;
+  background: #03389e;
+  line-height: 1em;
+  padding-right: .5em;
+  color: white;
+}
+
+.fa-share {
+  color: white;
+  background-color:#032394;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+}
+
+.left_side {
+  flex-basis: calc(60% - 1rem - 1rem);
+  margin: 1rem;
+}
+
+.right_side {
+  flex-basis: calc(40% - 1rem - 1rem);
+  margin: 1rem;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.sidebar {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%auto;
+}
+
+.sidebar_author {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    /* padding-right: 7em; */
+    /* padding-top: 1em; */
+}
+
+.socialmedia {
+    display: flex;
+    padding: 0;
+    width: 44%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.socialmedia_item a {
+  font-size: 1rem;
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.post__author-photo {
+  height: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.advertisement {
+  text-align: center;
+  padding: 3rem;
+}
+
+.adlink {
+  font-size: 0.8rem;
+}
+
+.ad_photo {
+  width: 20vh;
+  position: relative;
+  text-align: center;
+}
+
+.section {
+  padding: 2rem 0;
+  color: #333;
+  text-align: left;
+}
+
+.sidebar_social--ad {
+  text-align: center;
+}
+
+.fancy-text--big {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.fancy-text--medium {
+  font-size: 1.6rem;
+  display: inline-block;
+  ;
+}
+
+.section__header {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #0c145e;
+}
+
+.section__header__blog {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #0c145e;
+}
+
+.post__author-photo_mini {
+  border-radius: 50%;
+  height: 1.5em;
+  vertical-align: middle;
+  padding-right:.5em;
+}
+
+.quote {
+  color: #517ee3;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 1px solid #bdbdbd;
+  padding: 0.75rem 0.5rem;
+  margin: 0 0.3rem;
+}
+
+.section_header__sidebar {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #03389e;
+}
+
+.polaroid {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-parent {
+  position: relative;
+  width: calc(100% / 4);
+  text-align: left;
+  color: #707171;
+  opacity: 1rem;
+}
+
+.polaroid-parent::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.moarblogposts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.post_title {
+  display: flex;
+  justify-content: flex-start;
+  color: #e0e0e0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 74%;
+  padding-left: 0.5rem;
+}
+
+footer {
+  background: #000746;
+  text-decoration-color: white;
+  display: flex;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ironyardlogo {
+  margin: 0 0.5rem;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.nav-bottom__item a {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  text-align: right;
+}
+
+.legal {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ .nav-bottom_group {
+  display: flex;
+  color: white;
 }
